@@ -1,0 +1,5 @@
+@use "./utils/vars" as *;
+@import "./components/navigation.scss";
+body {
+  color: $defaultFontColor;
+}
