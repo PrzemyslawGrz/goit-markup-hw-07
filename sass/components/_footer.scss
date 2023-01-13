@@ -110,7 +110,7 @@
       display: block;
       border-radius: 50%;
       fill: $iconsFillingColor;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $transitionDurationDefault $transitionsFunctionDefault;
     }
     &__icon--style {
       fill: $secondaryColorWhite;
@@ -176,7 +176,7 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       padding: 0px 28px 0px 42px;
       gap: 24px;
-      transition: background-color var(--transition-set);
+      transition: background-color $footerFillingColor;
     }
     &__description {
       font-size: 16px;
