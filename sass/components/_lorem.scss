@@ -1,0 +1,35 @@
+.articles {
+  display: flex;
+  list-style: none;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    line-height: 100%;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+  }
+  &__lorem {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  &__icon {
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $backgroundColorGray;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03;
+    color: $secondaryColorGrey;
+  }
+}

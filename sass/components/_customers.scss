@@ -1,0 +1,27 @@
+.customers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: $primaryColor;
+  margin-top: 0;
+  padding-bottom: 50px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  &__box--icons {
+    display: block;
+    fill: $iconsFillingColor;
+    border: 1px solid $iconsFillingColor;
+    border-radius: 4px;
+    transition: $transitionDurationDefault $transitionsFunctionDefault;
+  }
+  &__box--icons:hover,
+  &__box--icons:focus {
+    fill: $specialColor;
+    border-color: $specialColor;
+  }
+}

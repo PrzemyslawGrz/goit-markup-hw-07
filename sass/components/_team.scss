@@ -1,0 +1,75 @@
+.team {
+  background-color: $backgroundColorGray;
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    color: $primaryColor;
+    margin-top: 0;
+    padding-bottom: 50px;
+  }
+  &__images-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+  }
+  &__image {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $secondaryColorWhite;
+  }
+  &__member {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0.03;
+    color: $primaryColor;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__icons-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    fill: $iconsFillingColor;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  &__position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    color: $footerFillingColor;
+    padding-top: 10px;
+  }
+  &__icons {
+    list-style-type: none;
+  }
+  &__icon {
+    display: block;
+    border-radius: 50%;
+    fill: $iconsFillingColor;
+    transition: $transitionDurationDefault $transitionsFunctionDefault;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    fill: $secondaryColorWhite;
+    background-color: $specialColor;
+    border-radius: 50%;
+  }
+}

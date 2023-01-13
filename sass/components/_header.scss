@@ -1,0 +1,116 @@
+.header {
+  padding: 24px 0 25px;
+  border-bottom: 1px solid #ececec;
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container--style {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+  }
+
+  &__logo-name {
+    font-family: "Raleway", sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $specialColor;
+    text-decoration: none;
+    border: none;
+  }
+
+  &__logo-name--black {
+    color: $primaryColor;
+  }
+
+  /* menu- block */
+
+  .header-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 46px;
+    transition: $transitionDurationDefault $transitionsFunctionDefault;
+    position: relative;
+
+    &__link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: left;
+      letter-spacing: 0.02em;
+      color: $primaryColor;
+      text-decoration: none;
+      transition: $transitionDurationDefault $transitionsFunctionDefault;
+    }
+
+    &__link:hover::after,
+    &__link:focus::after {
+      background-color: $specialColor;
+      content: "";
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      top: 45px;
+      border-radius: 2px;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: $specialColor;
+      position: relative;
+    }
+  }
+  /* contacts-block */
+  .header-contact {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+
+    &__link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: left;
+      letter-spacing: 0.02em;
+      color: $secondaryColorGrey;
+      text-decoration: none;
+      transition: $transitionDurationDefault $transitionsFunctionDefault;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: $specialColor;
+    }
+
+    &__icon {
+      vertical-align: middle;
+      fill: currentColor;
+      margin-right: 10px;
+    }
+  }
+}
