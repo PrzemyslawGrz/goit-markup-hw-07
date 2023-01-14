@@ -15,11 +15,11 @@
     border: none;
 
     &--black {
-      color: black;
+      color: $primaryColor;
     }
 
     &--white {
-      color: white;
+      color: $secondaryColorWhite;
     }
   }
 }
