@@ -48,7 +48,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header__links {
+.header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,31 +70,34 @@ body {
 
 /* logo-block */
 
-.header__logo {
+.logo {
   display: flex;
   align-items: center;
   gap: 93px;
 }
-
-.header__logo-name {
+.logo__studio {
   font-family: "Raleway", sans-serif;
   font-style: bold;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--blue-color);
+  color: var(blue);
   text-decoration: none;
   border: none;
 }
 
-.header__logo-name--black {
+.logo__studio--black {
   color: var(--black-color);
+}
+
+.logo__studio--white {
+  color: var(--white-color);
 }
 
 /* menu- block */
 
-.header-menu {
+.header__menu {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -104,7 +107,7 @@ body {
   position: relative;
 }
 
-.header-menu__link {
+.header__menu-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -115,8 +118,8 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu__link:hover::after,
-.header-menu__link:focus::after {
+.header__menu-link:hover::after,
+.header__menu-link:focus::after {
   background-color: var(--blue-color);
   content: "";
   display: flex;
@@ -128,12 +131,12 @@ body {
   border-radius: 2px;
 }
 
-.header-menu__link--active {
+.header__menu-link--active {
   position: relative;
   color: var(--blue-color);
 }
 
-.header-menu__link--active::after {
+.header__menu-link--active::after {
   content: "";
   position: absolute;
   display: block;
@@ -144,21 +147,21 @@ body {
   border-radius: 2px;
 }
 
-.header-menu__link:hover,
-.header-menu__link:focus {
+.header__menu-link:hover,
+.header__menu-link:focus {
   color: var(--blue-color);
   position: relative;
 }
 
 /* contacts-block */
 
-.header-contact {
+.header__contact {
   display: flex;
   gap: 50px;
   list-style: none;
 }
 
-.header-contact__link {
+.header__contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -169,12 +172,12 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contact__link:hover,
-.header-contact__link:focus {
+.header__contact-link:hover,
+.header__contact-link:focus {
   color: var(--blue-color);
 }
 
-.header-contact__icon {
+.header__contact-icon {
   vertical-align: middle;
   fill: currentColor;
   margin-right: 10px;
